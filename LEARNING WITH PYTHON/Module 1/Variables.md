@@ -17,3 +17,67 @@ In []:
     area = 0
 In []: `print(width)`
 Out []: 10
+
+In []:
+
+    # Expect an ERROR because the "height" variable is case-sensitive.
+    # ERROR CODE: "height" is not defined.
+    print(height)
+-
+
+    ---------------------------------------------------------------------------
+    NameError   Traceback (most recent call last)
+    <ipython-input-6-d56756f3e5e3> in <module>()
+     2 # ERROR CODE: "height" is not defined.
+     3 
+    ----> 4  height
+    
+    NameError: name 'height' is not defined
+
+In []: `print(Height)`
+Out []: 5
+
+In []: 
+
+    # Using a python keyword as a variable name
+    # ERROR CODE: invalid syntax
+    global = 1
+    print(global)
+.
+
+    File "<ipython-input-8-4909dc42d849>", line 4
+	global = 1
+           ^
+	SyntaxError: invalid syntax
+
+In []:
+
+    # More declarations for different variable types
+	# storing a string
+	helloMessage = "Hello World!"
+	first_name = "John"
+	
+	# storing a char
+	character_example = 'a'
+	
+	# storing a float
+	_newFloat = 1.0
+	
+	#storing a boolean value
+	bool_Condition = True
+	
+In []: `print(helloMessage)`
+
+Out []: 'Hello World!'
+
+In []:`print(character_example)`
+
+Out []: 'a'
+
+In []:`print(_newFloat)`
+
+Out []: 1.0
+
+In []:`print(bool_Condition)`
+
+Out []: True	
